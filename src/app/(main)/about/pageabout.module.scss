@@ -1,0 +1,157 @@
+@use "src/app/(main)/variables" as v;
+
+.stageCubeCont {
+  left: 70%;
+  top: 35%;
+  position: absolute;
+}
+
+.cubespinner {
+  animation-name: spincube;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+  animation-duration: 12s;
+  transform-style: preserve-3d;
+  transform-origin: 100px 100px 0;
+  margin-left: calc(50% - 100px);
+
+  div {
+    position: absolute;
+    width: 200px;
+    height: 200px;
+
+    background: rgba(26, 20, 35, 0.4);
+    text-align: center;
+    font-size: 150px;
+    box-shadow: 0 0 20px 0px rgb(236, 224, 255);
+  }
+
+  .face1 {
+    transform: translateZ(100px);
+    color: #dd0031;
+  }
+  .face2 {
+    transform: rotateY(90deg) translateZ(100px);
+    color: #f06529;
+  }
+  .face3 {
+    transform: rotateY(90deg) rotateX(90deg) translateZ(100px);
+    color: #28d963;
+  }
+  .face4 {
+    transform: rotateY(180deg) rotateZ(90deg) translateZ(100px);
+    color: #28d963;
+  }
+  .face5 {
+    transform: rotateY(-90deg) rotateZ(90deg) translateZ(100px);
+    color: #efd81d;
+  }
+  .face6 {
+    transform: rotateX(-90deg) translateZ(100px);
+    color: #ec4d28;
+  }
+}
+
+@keyframes spincube {
+  from,
+  to {
+    transform: rotateX(0deg) rotateY(0deg) rotateZ(0deg);
+  }
+  16% {
+    transform: rotateY(-90deg);
+  }
+  33% {
+    transform: rotateY(-90deg) rotateZ(90deg);
+  }
+  50% {
+    transform: rotateY(-180deg) rotateZ(90deg);
+  }
+  66% {
+    transform: rotateY(-270deg) rotateX(90deg);
+  }
+  83% {
+    transform: rotateX(90deg);
+  }
+}
+
+.textZoneAbout {
+  position: relative;
+
+  width: 50%;
+  padding: 4vh 15px 0 0;
+  top: -70px;
+
+  // transform: translateY(-5%);
+  // width: 40%;
+  // vertical-align: middle;
+  // display: table-cell;
+  // display: flex;
+  // flex-direction: column;
+  // justify-content: center;
+
+  h1 {
+    font-size: 53px;
+    font-family: "Coolvetica";
+    color: #000000;
+    font-weight: 400;
+
+    line-height: normal;
+    font-family: "Coolvetica";
+  }
+
+  p {
+    margin-top: 7px;
+    margin-bottom: 7px;
+    font-size: 14px;
+    color: #000000;
+  }
+}
+
+@media (max-width: v.$layout-breakpoint-small) {
+  .stageCubeCont {
+    left: 50%;
+    top: 60%;
+    position: fixed;
+  }
+
+  .cubespinner {
+    animation-name: spincube;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    animation-duration: 12s;
+    transform-style: preserve-3d;
+    transform-origin: 50px 50px 0;
+    margin-left: calc(50% - 50px);
+
+    div {
+      position: absolute;
+      width: 60px;
+      height: 60px;
+
+      background: rgba(26, 20, 35, 0.4);
+      text-align: center;
+      font-size: 75px;
+      box-shadow: 0 0 10px 0px rgb(236, 224, 255);
+    }
+  }
+
+  .textZoneAbout {
+    position: relative;
+    transform: unset;
+    width: 100%;
+    display: block;
+    padding-right: 4vw;
+    padding-top: 4vh;
+
+    h1 {
+      font-size: 6rem;
+      color: rgb(0, 0, 0);
+      line-height: normal;
+    }
+
+    p {
+      margin-top: 17px;
+      color: #818181;
+    }
+  }
+}

@@ -93,7 +93,7 @@ export default function NewsLetter() {
     <>
       <div className={styles.theWrapper}>
         <p>
-          Receive notifications from <b>high&nbsp;quality</b> opinions of mine.
+          Receive notifications from opinions of mine. <br />
           Lifestyle, computer science related.
         </p>
         <form

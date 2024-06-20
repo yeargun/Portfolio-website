@@ -12,7 +12,7 @@ import {
   extend,
 } from "react-three-fiber";
 import { OrbitControls, Box } from "@react-three/drei";
-import {openHtmlContent} from "@components/HomepageMainThing/util";
+import { openHtmlContent } from "@components/HomepageMainThing/util";
 
 extend({ OrbitControls });
 
@@ -111,6 +111,7 @@ export default function Page() {
             something uncool
           </h3>
         )}
+
         <img
           src={
             assetIsLoaded
@@ -133,13 +134,12 @@ export default function Page() {
               top: "480px",
             }}
           >
-           {/*   <a href="data:text/html;charset=utf-8,%3Cdiv%3E%3Ch1%3EHello%2C%20World%21%3C%2Fh1%3E%3C%2Fdiv%3E" target="_blank">
+            {/*   <a href="data:text/html;charset=utf-8,%3Cdiv%3E%3Ch1%3EHello%2C%20World%21%3C%2Fh1%3E%3C%2Fdiv%3E" target="_blank">
             made with this
             </a>*/}
-              <a href="javascript:void(0);" onClick={openHtmlContent}>
-                  made with this
-              </a>
-
+            <a href="javascript:void(0);" onClick={openHtmlContent}>
+              made with this
+            </a>
           </description>
         )}
         <Canvas
@@ -158,6 +158,20 @@ export default function Page() {
           <OrbitControls enableDamping enablePan enableRotate enableZoom />
         </Canvas>
       </section>
+      {/* <div style={{ position: "absolute", left: '50%', top: '15%', display: 'flex', flexDirection: 'column' }}
+      >
+        <img
+          src={"/images/har2.png"
+          }
+          width="330px"
+          alt={""}
+          quality={90}
+          priority={true}
+          draggable={false}
+        />
+        <i style={{textAlign: 'center'}}></i>
+      </div> */}
+
       <div className={styles.textZone}>
         <h1 className={styles.nonSelectable}>
           <span className={styles.letterClass}>H</span>

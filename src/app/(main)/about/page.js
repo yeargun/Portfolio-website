@@ -65,17 +65,15 @@ const About = () => {
         <ul>
           <li>nlp, ml, vector databases & search is always cool</li>
           <li>system design</li>
-          <li>js api, web technologies, wasm</li>
-          <li>backend mostly Java, im not proud</li>
+          <li>web technologies</li>
+          <li>backend mostly Node and Java</li>
           <li>front mostly react</li>
           <li>
-            devsecops i respect that. probably is a crazy experience for the
-            companies deploying their stuf 7/24
+            devsecops i respect that. not a big fan
           </li>
           <li>
-            data engineering, web crawling is cool. i wish i was more proficient
+            data engineering, web crawling is cool
           </li>
-          <li>it & infra & mlops not much experience but ggs to the folks</li>
         </ul>
         {/* <h3>
           I read, think, do on the following <u>non-tech</u> stuf

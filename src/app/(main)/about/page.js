@@ -40,42 +40,43 @@ const About = () => {
         alignItems: "center",
       }}
     >
-      <div className={styles.textZoneAbout}>
-        <h1>
-          <AnimatedLetters
-            letterClass="textAnimate"
-            strArray={["A", "b", "o", "u", "t", " ", "m", "e"]}
-            idx={15}
-          />
-        </h1>
-        <p>I like to get things done.</p>
-        <p>
-          Chill and confident person. I enjoy spending time with my friends and
-          family.
-        </p>
-        <p>
-          I like gym, ski, coffee, humuor, sometimes I do nerd sh*t. I am quite
-          an interesting personality in that sense.
-        </p>
-      </div>
-      <div>
-        <h3>
-          I read, think, do on the following <u>tech</u> stuf
-        </h3>
-        <ul>
-          <li>nlp, ml, vector databases & search is always cool</li>
-          <li>system design</li>
-          <li>web technologies</li>
-          <li>backend mostly Node and Java</li>
-          <li>front mostly react</li>
-          <li>
-            devsecops i respect that. not a big fan
-          </li>
-          <li>
-            data engineering, web crawling is cool
-          </li>
-        </ul>
-        {/* <h3>
+      <s>
+        <div className={styles.textZoneAbout}>
+          <h1>
+            <AnimatedLetters
+                letterClass="textAnimate"
+                strArray={["A", "b", "o", "u", "t", " ", "m", "e"]}
+                idx={15}
+            />
+          </h1>
+          <p>I like to get things done.</p>
+          <p>
+            Chill and confident person. I enjoy spending time with my friends and
+            family.
+          </p>
+          <p>
+            I like gym, ski, coffee, humuor, sometimes I do nerd sh*t. I am quite
+            an interesting personality in that sense.
+          </p>
+        </div>
+        <div>
+          <h3>
+            I read, think, do on the following <u>tech</u> stuf
+          </h3>
+          <ul>
+            <li>nlp, ml, vector databases & search is always cool</li>
+            <li>system design</li>
+            <li>web technologies</li>
+            <li>backend mostly Node and Java</li>
+            <li>front mostly react</li>
+            <li>
+              devsecops i respect that. not a big fan
+            </li>
+            <li>
+              data engineering, web crawling is cool
+            </li>
+          </ul>
+          {/* <h3>
           I read, think, do on the following <u>non-tech</u> stuf
         </h3>
         <ul>
@@ -111,7 +112,14 @@ const About = () => {
             </>
           )}
         </ul> */}
-      </div>
+        </div>
+      </s>
+
+      <h1>Im building an online learning platform at learn.stuf24.com</h1>
+      <h4>yeah. </h4>
+
+      <br/>
+<p>i found theopage some cringe. so its crossed. you dont know about me</p>
       {/* <HardSpinningCube /> */}
     </div>
   );

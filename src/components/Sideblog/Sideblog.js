@@ -139,7 +139,7 @@ const SideBlog = ({ currentPage = undefined, NewsletterComp }) => {
           )}
         </div>
       )}
-      {NewsletterComp && <NewsletterComp />}
+      {/*{NewsletterComp && <NewsletterComp />}*/}
     </div>
   );
 };
